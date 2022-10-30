@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/Core/
+RewriteCond %{REQUEST_URI} !^/Data/
+RewriteRule .+ index.php
